@@ -1,0 +1,34 @@
+#!/bin/bash
+find src/components -type f -name "*.tsx" -exec sed -i \
+  -e 's/bg-emerald-50/bg-slate-50/g' \
+  -e 's/bg-emerald-100/bg-slate-100/g' \
+  -e 's/border-emerald-200/border-slate-200/g' \
+  -e 's/border-emerald-800/border-slate-700/g' \
+  -e 's/text-emerald-700/text-slate-700/g' \
+  -e 's/text-emerald-800/text-slate-800/g' \
+  -e 's/dark:bg-emerald-950\/60/dark:bg-slate-800\/60/g' \
+  -e 's/dark:bg-emerald-950\/40/dark:bg-slate-800\/40/g' \
+  -e 's/dark:text-emerald-300/dark:text-slate-300/g' \
+  -e 's/bg-amber-50/bg-slate-50/g' \
+  -e 's/bg-amber-100/bg-slate-100/g' \
+  -e 's/border-amber-200/border-slate-200/g' \
+  -e 's/border-amber-800/border-slate-700/g' \
+  -e 's/text-amber-700/text-slate-700/g' \
+  -e 's/text-amber-800/text-slate-800/g' \
+  -e 's/dark:bg-amber-950\/60/dark:bg-slate-800\/60/g' \
+  -e 's/dark:bg-amber-950\/40/dark:bg-slate-800\/40/g' \
+  -e 's/dark:text-amber-300/dark:text-slate-300/g' \
+  -e 's/bg-rose-50/bg-slate-50/g' \
+  -e 's/bg-rose-100/bg-slate-100/g' \
+  -e 's/border-rose-200/border-slate-200/g' \
+  -e 's/border-rose-800/border-slate-700/g' \
+  -e 's/text-rose-700/text-slate-700/g' \
+  -e 's/text-rose-800/text-slate-800/g' \
+  -e 's/dark:bg-rose-950\/60/dark:bg-slate-800\/60/g' \
+  -e 's/dark:bg-rose-950\/40/dark:bg-slate-800\/40/g' \
+  -e 's/dark:bg-rose-950\/50/dark:bg-slate-800\/50/g' \
+  -e 's/hover:bg-rose-100/hover:bg-slate-100/g' \
+  -e 's/hover:bg-emerald-100/hover:bg-slate-100/g' \
+  -e 's/hover:bg-amber-100/hover:bg-slate-100/g' \
+  -e 's/dark:text-rose-300/dark:text-slate-300/g' \
+  {} +
